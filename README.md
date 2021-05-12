@@ -28,3 +28,7 @@ ye rahi hast a'adad farsi beshe man yadam nist, az sag khanoom bepors
 certificate-a too safeye certificate biroon mizane, ellatesh ine ke tag-e img hatman bayad to too tag-e div bashe
 vagarna beham mirize....
 
+hamishe esm-e folder-a o file-a horoof kuchik bashe. internet horoof bozorg o kuchik ro ye joor mibine.
+Image-a kheili behtare esmeshun ma'ni dar bashe. unjuri search engine-a peidashun mikonan va vaghti too google image search koni
+aroos-e-khoshgel akseto too result neshun mide.
+
