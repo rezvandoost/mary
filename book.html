@@ -6,20 +6,51 @@
 <title>سالن زیبایی ملکه زیبایی</title>
 <link rel="stylesheet" type="text/css" href="css/nav.css">	
 	<style>
-		main{
-			 margin-top:100px; 
+		main {
+		    margin-top:100px; 
 			width:100%; 
 			background-image: url('Images/IMG_9402.JPG'); 
 			background-attachment: fixed; 
 			background-repeat: no-repeat; 
 			background-size:100%;
 		}
-		.class-table{
+		
+		.class-table {
 			border:1 solid black; 
 			padding:20px;
 		}
-		p{
+		
+		p {
 			font-size: 20px;
+		}
+		
+		.div-parent {
+			width:95%;
+			height:auto;
+			margin:auto; 
+			padding:20px;
+		}
+		
+		.div-child {
+			display:inline-block;
+			width:45%;
+		}
+		
+		.contact {
+			width:50%; 
+			padding: 20px; 
+			padding-right:5%; 
+			margin-top:50px;
+		}
+		
+		input {
+			border:1px solid #cfb263;
+			border-radius: 5px;
+		}
+		
+		textarea {
+			border:1px solid #cfb263;
+			border-radius: 5px;
 		}
 		
 	</style>
@@ -27,26 +58,25 @@
 
 <body>
   <header >
-    	<nav>
-		  <ul>
-    		<li><a href="index.html">صفحه نخست</a></li>
-    		<li><a href="index.html#introduction">معرفی</a></li>
-    		<li><a href="services.html">خدمات</a></li>
-    		<li><a href="articles.html">مقالات</a></li>
-    		<li><a href="book.html">رزرو نوبت</a></li>
-    		<li><a href="certificates.html">گواهینامه ها</a></li>
-    		<li><a href="book.html#contact">تماس با ما</a></li>
-    	  </ul>
+    <nav>
+	   <ul>
+    	 <li><a href="index.html">صفحه نخست</a></li>
+    	 <li><a href="index.html#introduction">معرفی</a></li>
+    	 <li><a href="services.html">خدمات</a></li>
+    	 <li><a href="articles.html">مقالات</a></li>
+    	 <li><a href="book.html">رزرو نوبت</a></li>
+    	 <li><a href="certificates.html">گواهینامه ها</a></li>
+    	 <li><a href="book.html#contact">تماس با ما</a></li>
+    	</ul>
 	   </nav>
     </header>
 	
   <main>
-	<div style="width:95%; height:auto; margin:auto; padding:20px;">
-	<form action="targetpage.php" method="post">
-		
-	<div style="float:right; display:inline-block; width:45%">
-	<p style="padding-right:10px">لطفا برای رزرو نوبت مشخصات و اطلاعات مورد نظر را وارد نمایید:</p>
-	<table class="class-table">
+    <div class="div-parent">
+	<form action="targetpage.php" method="post">	
+	  <div class="div-child" style="float:right">
+	    <p style="padding-right:10px">لطفا برای رزرو نوبت مشخصات و اطلاعات مورد نظر را وارد نمایید:</p>
+	    <table class="class-table">
 		<tr>
 			<td>نام</td>
 			<td><input type="text" name="firstname"></td>
@@ -72,10 +102,9 @@
 			<td><textarea name="" rows="13" cols="25" size="30" maxlength="100"></textarea></td>
 		</tr>
 		</table>
-		</div>
-		
-		<div style="float:left; display:inline-block; width:45%">
-		<p style="padding-right:10px">لطفا خدمات مورد نطر خود را انتخاب کنید:</p>
+	  </div>
+	  <div class="div-child" style="float:left">
+		<p style="padding-right:10px">لطفا خدمات مورد نظر خود را انتخاب کنید:</p>
 		<table class="class-table">
 		<tr>
 			<td>عروس</td>
@@ -105,38 +134,33 @@
 			<td>طراحی ناخن</td>
 			<td><input type="checkbox" name="nail"></td>
 		</tr>
-	</table>
-	</div>
-		
-	
-		
-	<div style="float:left; display:inline-block; width:45%">
-	<p style="padding-right:10px">لطفا تاریخ و ساعت مورد نظر را انتخاب کنید:</p>
-		<table style="border:1 solid black; padding-right:20px">
-		<tr>
+	 </table>
+	 </div>
+	 <div class="div-child" style="float:left">
+	   <p style="padding-right:10px">لطفا تاریخ و ساعت مورد نظر را انتخاب کنید:</p>
+	   <table style="border:1 solid black; padding-right:20px">
+	   <tr>
 			<td>تاریخ و ساعت</td>
 			<td><input type="datetime-local"></td>
-		</tr>
-		</table>	
-	<p style="padding-right:10px">
+	   </tr>
+	   </table>	
+	   <p style="padding-right:10px">
 		لطفا اطلاعات خود را تایید و یا ویرایش کنید:</p>
-	<table style="border:1 solid black; padding-right:20px; width:30%;">
-		<tr>
-			<td><input type="reset" value="پاک کردن" style="font-size: 17px"></td>
-			<td><input type="submit" value="ثبت کردن" style="font-size: 17px"></td>
-		</tr>
-		</table>
-	</div>
-		
+	   <table style="border:1 solid black; padding-right:20px; width:30%;">
+	   <tr>
+			<td><input type="reset" value="پاک کردن" style="font-size: 17px; font-weight: bold"></td>
+			<td><input type="submit" value="ثبت کردن" style="font-size: 17px; font-weight:bold"></td>
+	   </tr>
+	   </table>
+	 </div>	
 	</form>
-	 </div>
-	 <br> 
-	
-    <div style="clear:both"></div>
-	  
-	<div style="width:50%; padding: 20px; padding-right:5%; margin-top:50px">
-	<h3>اطلاعات تماس آرایشگاه:</h3>
+	</div>
+	<br> 
+    <div style="clear:both"></div> 
+	<div class="contact">
+	    <h2>اطلاعات تماس آرایشگاه:</h2>
 		<a name="contact"></a>
+		<p><span style="color:blue">توجه: اطلاعات وارد شده فرضی و غیرواقعی می باشد</span></p>
 		<p>آدرس: تهران, پاسداران, گلستان هفتم, پلاک 144, برج مینو, طبقه 4, واحد 2</p>
 		<p>تلفن تماس:22446688 - 091222446688</p>
 		<p>E.mail:queen@gmail.com</p>
@@ -145,16 +169,15 @@
 		<p>روزهای جمعه از ساعت 11 الی 16 با تعیین وقت قبلی</p>
 		<br>
 		<br>
-		
 	</div>
-<br>
-	  <div style="clear: both"></div>
+    <br>
+	<div style="clear: both"></div>
   </main>
 	
-	
   <footer>
-	  <br>
-	Designed by <a href="mailto:mariam59@gmail.com"><span style="font-size:22px"><i>M@ri@M Rezvandoost</i></span></a>  &copy; 2021  
+	  <br>Designed by
+	  <a href="mailto:mariam59[@]gmail[dot]com">
+	  <span style="font-size:22px"><i>M@ri@M Rezvandoost</i></span></a> &copy; 2021  
   </footer>
 </body>
 </html>
